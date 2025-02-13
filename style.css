@@ -1,0 +1,201 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background: linear-gradient(135deg, #000428, #004e92);
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Encabezado */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+header h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: -webkit-linear-gradient(45deg, #00c6ff, #0072ff);
+    background-clip: text;
+    color: transparent;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background: #00c6ff;
+    color: #000;
+    box-shadow: 0 0 10px #00c6ff, 0 0 40px #0072ff;
+}
+
+/* Sección principal con fondo animado */
+main {
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+}
+
+.intro {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.intro h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Objetivos */
+.objetivos {
+    margin-top: 40px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.objetivos h2 {
+    font-size: 28px;
+    color: #00c6ff;
+    margin-bottom: 20px;
+}
+
+.objetivos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.objetivos ul li {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.objetivos ul li:hover {
+    transform: scale(1.05);
+}
+
+/* Botón llamativo */
+.call-to-action {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.call-to-action .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px #ff512f, 0 0 20px #dd2476;
+}
+
+.call-to-action .btn:hover {
+    background: linear-gradient(45deg, #ff105f, #ffad06);
+    box-shadow: 0 0 15px #ff105f, 0 0 30px #ffad06;
+}
+
+/* Pie de página */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    box-shadow: 0 -4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Fondo animado con partículas */
+body::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png');
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Efecto de partículas flotantes */
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
